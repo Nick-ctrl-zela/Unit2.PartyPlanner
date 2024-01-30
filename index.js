@@ -68,7 +68,7 @@ function addParty() {
   const partyName = partyForm.elements['partyName'].value;
   const partyDate = new Date(document.getElementById('partyDate').value);
   //I couldn't get time to work and kept getting errors back
-  const partyTime = partyForm.elements['partyTime'].value;
+  // const partyTime = partyForm.elements['partyTime'].value;
   const partyLocation = partyForm.elements['partyLocation'].value;
   const partyDescription = partyForm.elements['partyDescription'].value;
 
@@ -76,7 +76,7 @@ function addParty() {
       name: partyName,
       date: partyDate,
       //I couldn't get time to work and kept getting errors back
-      time: partyTime,
+      // time: partyTime,
       location: partyLocation,
       description: partyDescription,
   };
