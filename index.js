@@ -19,7 +19,6 @@ function loadParties() {
   const partyList = document.getElementById('partyList');
 
   // Placeholder for API request to retrieve parties
-  // Replace 'YOUR_API_URL' with the actual API endpoint
   fetch(`${API_URL}`)
       .then(response => response.json())
       .then(result => {
@@ -82,7 +81,6 @@ function addParty() {
   };
 
   // Placeholder for API request to add a new party
-  // Replace 'YOUR_API_URL' with the actual API endpoint
   fetch(`${API_URL}`, {
       method: 'POST',
       headers: {
@@ -109,7 +107,6 @@ function addParty() {
 
 function deleteParty(date) {
   // Placeholder for API request to delete a party
-  // Replace 'YOUR_API_URL' with the actual API endpoint
   fetch(`${API_URL}/${date}`, {
       method: 'DELETE',
   })
